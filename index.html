@@ -1,10 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>title</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snake and Ladder Game</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
+
+  <header>
+    <h1>🎲 Snake and Ladder</h1>
+    <p>Select Game Mode</p>
+    <div class="mode-selection">
+      <button id="singlePlayerBtn">Single Player (vs Bot)</button>
+      <button id="twoPlayerBtn">Two Players</button>
+    </div>
+
+    <div id="nameInputs">
+      <input type="text" id="player1Name" placeholder="Enter Player 1 Name" />
+      <input type="text" id="player2Name" placeholder="Enter Player 2 Name (or leave blank for Bot)" />
+      <button id="startGameBtn">Start Game</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="gameBoard">
+      <div id="board"></div>
+    </section>
+
+    <section id="infoPanel">
+      <div id="playerInfo">
+        <p id="player1Status">Player 1: Position 1</p>
+        <p id="player2Status">Player 2: Position 1</p>
+      </div>
+
+      <div id="diceArea">
+        <p>🎲 Dice Roll: <span id="diceValue">-</span></p>
+        <button id="rollDiceBtn">Roll Dice</button>
+      </div>
+
+      <div id="gameLog">
+        <p id="logText">Game Log will appear here.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ by Anjali</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
